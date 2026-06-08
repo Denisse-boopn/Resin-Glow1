@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalogo de Productos</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+body{
+background:#f4f4f4;
+}
+
+header{
+background:#0077cc;
+color:white;
+text-aling:center;
+padding:20px;
+}
+
+/* SLIDER */
+.slider{
+width:90%;
+max-width:1000px;
+height:350px;
+margin:20px auto;
+overflow:hidden;
+border-radius:10px;
+position:relative;
+}
+
+.slides{
+display:flex;
+width:300%;
+animation: slide 12s infinite;
+}
+
+.slides img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+@keyframes slide{
+0%{margin-left:0;}
+25%{margin-left:0;}
+
+30%{margin-left:-100%;}
+55%{margin-left:-100%;}
+
+60%{margin-left:-200%;}
+85%{margin-left:-200%;}
+
+100%{margin-left:0;}
+}
+
+/* PRODUCTOS */
+.catalogo{
+width:90%;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px 0;
+}
+
+.producto{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+transition:0.3s;
+flex:0 0 30%
+}
+
+.producto:hover{
+transform:scale(1.03);
+}
+
+.producto img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.info{
+padding:15px;
+text-align:center;
+}
+
+.info h3{
+margin-bottom:10px;
+}
+
+.precio{
+color:#0077cc;
+font-size:22px;
+font-weight:bold;
+margin:10px 0;
+}
+
+ button{
+background:#0077cc;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#005fa3;
+}
+
+ footer{
+background:#222;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Catalogo de Productos</h1>
+  <p>Encuentra los mejores productos</p>
+</header>
+
+<!_SLIDER_>
+<div class="slider">
+  <div class="slides">
+   <img src="logoo.jpeg" alt="Llaveros">
+   <img src="imagennn.jpeg" alt="Imagen 2">
+   <img src="imagennnn.jpeg" alt="Imagen 3">
+    </div>
+</div>
+<hr>
+<a href="index.html">Pagina Principal</a>
+
+ <!-- CATALOGO -->
+ <section class="catalogo">
+
+<div class="producto">
+  <img src="llavero.jpeg" alt="Producto">
+  <div class="info">
+    <h3>Estrella</h3>
+    <p>Decoracion brillante.
+</p>
+    <div class="precio">$30</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="collar.jpeg" alt="Producto">
+  <div class="info">
+    <h3>Collar Pieza Especial</h3>
+    <p>Complemento unico especial.</p>
+    <div class="precio">$50</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="Pulsera.jpeg" alt="Producto">
+  <div class="info">
+    <h3>Brazalete</h3>
+    <p>Accesorio rosado brillante.</p>
+    <div class="precio">$35</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="Estrella.jpeg" alt="Producto">
+  <div class="info">
+    <h3>Estrella</h3>
+    <p>Estrella decorativa para escritorio.</p>
+    <div class="precio">$45</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="Aretes.jpeg" alt="Producto">
+  <div class="info">
+    <h3>Aretes</h3>
+    <p>Accesorio cristalino.</p>
+    <div class="precio">$40</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="Llavero2.jpeg" alt="Producto">
+  <div class="info">
+    <h3>LLavero</h3>
+    <p>Hoja natural preservada.</p>
+    <div class="precio">$30</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="Llavero3.jpeg" alt="Producto">
+  <div class="info">
+    <h3>LLavero</h3>
+    <p>Diamante brillante.</p>
+    <div class="precio">$30</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="Llavero4.jpeg" alt="Producto">
+  <div class="info">
+    <h3>LLavero</h3>
+    <p>Colgante de la suerte.</p>
+    <div class="precio">$30</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="collar2.jpeg" alt="Producto">
+  <div class="info">
+    <h3>Collar</h3>
+    <p>Accesorio estrellado.</p>
+    <div class="precio">$50</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="estrella2.jpeg" alt="Producto">
+  <div class="info">
+    <h3>Estrella</h3>
+    <p>Estrella decorativa con flor natural.</p>
+    <div class="precio">$40</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="aretes2.jpeg" alt="Producto">
+  <div class="info">
+    <h3>Aretes</h3>
+    <p>Accesorio dorado.</p>
+    <div class="precio">$40</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="llavero5.jpeg" alt="Producto">
+  <div class="info">
+    <h3>LLavero</h3>
+    <p>Hoja natural preservada.</p>
+    <div class="precio">$30</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="aretes3.jpeg" alt="Producto">
+  <div class="info">
+    <h3>Aretes</h3>
+    <p>Accesorio toque rosa encantador.</p>
+    <div class="precio">$40</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="pulsera2.jpeg" alt="Producto">
+  <div class="info">
+    <h3>Brazalete</h3>
+    <p>Accesorio de amor y brillo.</p>
+    <div class="precio">$35</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="estrella3.jpeg" alt="Producto">
+  <div class="info">
+    <h3>Estrella</h3>
+    <p>Estrella decorativa con chapulin disecado.</p>
+    <div class="precio">$40</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="collarr.jpeg" alt="Producto">
+  <div class="info">
+    <h3>Collar</h3>
+    <p>Accesorio dorado.</p>
+    <div class="precio">$50</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="llaveroo.jpeg" alt="Producto">
+  <div class="info">
+    <h3>LLavero</h3>
+    <p>Floral encantador.</p>
+    <div class="precio">$30</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="pepa.jpeg" alt="Producto">
+  <div class="info">
+    <h3>Peppa</h3>
+    <p>Peppa decorativa.</p>
+    <div class="precio">$25</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="aretess.jpeg" alt="Producto">
+  <div class="info">
+    <h3>Aretes</h3>
+    <p>Accesorio con frescura y estilo.</p>
+    <div class="precio">$40</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="Estrella.jpeg" alt="Producto">
+  <div class="info">
+    <h3>Estrella</h3>
+    <p>Decoracion transparente.</p>
+    <div class="precio">$40</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="portaretratos.jpeg" alt="Producto">
+  <div class="info">
+    <h3>Portaretrato personalizado</h3>
+    <p>.</p>
+    <div class="precio">$60</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="llavero7.jpeg" alt="Producto">
+  <div class="info">
+    <h3>LLavero</h3>
+    <p>Naturaleza con vida.</p>
+    <div class="precio">$30</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="llavero8.jpeg" alt="Producto">
+  <div class="info">
+    <h3>LLavero</h3>
+    <p>Amor compartido.</p>
+    <div class="precio">$30</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="llavero9.jpeg" alt="Producto">
+  <div class="info">
+    <h3>LLavero</h3>
+    <p>Elegancia natural.</p>
+    <div class="precio">$30</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+
+<div class="producto">
+  <img src="arete5.jpeg" alt="Producto">
+  <div class="info">
+    <h3>Aretes</h3>
+    <p>Accesorio delicado y femenino.</p>
+    <div class="precio">$40</div>
+    <button>Comprar</button>
+  </div>
+ </div>
+</section>
+
+<footer>
+   <p>Catálogo de Productos © 2026</p>
+</footer>
+
+</body>
+</div>
+</div>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
